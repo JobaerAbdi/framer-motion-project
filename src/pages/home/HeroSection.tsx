@@ -1,11 +1,12 @@
 import Container from "@/components/ui/Container";
 
-const Home = () => {
+const HeroSection = () => {
     return (
         <Container>
-            <h1>This is Home</h1>
+            <div></div>
+            <div></div>
         </Container>
     );
 };
 
-export default Home;
+export default HeroSection;

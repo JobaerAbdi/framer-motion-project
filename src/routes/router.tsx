@@ -1,7 +1,10 @@
 import App from "@/App";
 import DashBoardLayout from "@/components/ui/layouts/DashBoardLayout";
-import About from "@/pages/About";
-import Home from "@/pages/Home";
+import ServiceSection from "@/pages/ServiceSection";
+
+import Home from "@/pages/home";
+import AboutUsSection from "@/pages/home/AboutUsSection";
+import HeroSection from "@/pages/home/HeroSection";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -14,8 +17,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "hero",
+        element: <HeroSection/>,
+      },
+      {
         path: "about",
-        element: <About />,
+        element: <AboutUsSection />,
+      },
+      {
+        path: "service",
+        element: <ServiceSection />,
       },
     ],
   },
